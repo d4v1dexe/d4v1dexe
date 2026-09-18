@@ -7,8 +7,6 @@ Programming is what I do in my free time too, mostly Python.
 
 Most of what I write stays local, so it's quiet around here.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=d4v1dexe&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=d4v1dexe&layout=compact&theme=default&hide_border=true&bg_color=00000000">
-</picture>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
