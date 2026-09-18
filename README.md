@@ -5,6 +5,8 @@ I go to HTL Anichstraße, doing biomedical engineering — signal analysis, circ
 
 Programming is what I do in my free time too, mostly Python.
 
+Lately some of it has been going into open source projects I use.
+
 Most of what I write stays local, so it's quiet around here.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
