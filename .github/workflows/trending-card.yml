@@ -1,0 +1,48 @@
+name: Trending Python card
+
+on:
+  schedule:
+    # Hourly. Public repos get unlimited Actions minutes, and GitHub's image
+    # cache means anything faster would not be visible anyway.
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/trending-card.mjs"
+      - ".github/workflows/trending-card.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trending-card
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Render the card
+        env:
+          # Raises the search API rate limit; no extra scopes needed.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/trending-card.mjs
+
+      # Published to its own branch so main's history stays clean and the
+      # snake's `output` branch is left alone.
+      - name: Publish to the card branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: card
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
