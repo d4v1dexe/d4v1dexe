@@ -114,7 +114,27 @@ ${desc.map((l, i) => `    <text x="24" y="${92 + i * 19}">${esc(l)}</text>`).joi
 `;
 }
 
+// A fixed URL that forwards to whatever repo is currently on the card. The
+// README links here, so the link can never fall out of step with the picture.
+function redirect(repo) {
+  const url = esc(repo.html_url);
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=${url}">
+<link rel="canonical" href="${url}">
+<title>Redirecting to ${esc(repo.full_name)}</title>
+</head>
+<body>
+<p>Redirecting to <a href="${url}">${esc(repo.full_name)}</a>.</p>
+</body>
+</html>
+`;
+}
+
 const repo = await fetchTrending();
 fs.mkdirSync(OUT_DIR, { recursive: true });
 fs.writeFileSync(path.join(OUT_DIR, OUT_FILE), render(repo), 'utf8');
-console.log(`picked ${repo.full_name} (${repo.stargazers_count} stars)`);
+fs.writeFileSync(path.join(OUT_DIR, 'index.html'), redirect(repo), 'utf8');
+console.log(`picked ${repo.full_name} (${repo.stargazers_count} stars) -> ${repo.html_url}`);
