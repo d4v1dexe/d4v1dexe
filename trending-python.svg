@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 170" width="520" height="170" role="img" aria-label="Trending Python repository: Nanako0129/sepia">
+  <title>Trending in Python: Nanako0129/sepia</title>
+  <style>
+    .bg     { fill: #ffffff; stroke: #d0d7de; }
+    .kicker { fill: #57606a; }
+    .name   { fill: #0969da; }
+    .desc   { fill: #424a53; }
+    .meta   { fill: #57606a; }
+    .star   { fill: #9a6700; }
+    @media (prefers-color-scheme: dark) {
+      .bg     { fill: #0d1117; stroke: #30363d; }
+      .kicker { fill: #8b949e; }
+      .name   { fill: #58a6ff; }
+      .desc   { fill: #c9d1d9; }
+      .meta   { fill: #8b949e; }
+      .star   { fill: #e3b341; }
+    }
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .t-kicker { font-size: 11px; letter-spacing: 2.2px; }
+    .t-name   { font-size: 19px; font-weight: 600; }
+    .t-desc   { font-size: 12.5px; }
+    .t-meta   { font-size: 11px; }
+  </style>
+
+  <rect class="bg" x="0.5" y="0.5" width="519" height="169" rx="10" stroke-width="1"/>
+
+  <text class="kicker t-kicker" x="24" y="32">TRENDING IN PYTHON</text>
+
+  <text class="name t-name" x="24" y="64">Nanako0129/sepia</text>
+
+  <g class="desc t-desc">
+    <text x="24" y="92">De-AI writing skill for any Agent Skills-compatible</text>
+    <text x="24" y="111">agent (77+ via the Skills CLI), with native plug…</text>
+  </g>
+
+  <g transform="translate(24,140)">
+    <path class="star" transform="scale(0.85)" d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
+    <text class="meta t-meta" x="22" y="12">2.6k</text>
+    <text class="meta t-meta" x="70" y="12">created 2026-08-28</text>
+  </g>
+
+  <text class="meta t-meta" x="496" y="152" text-anchor="end">updated 2026-09-19 16:01 UTC</text>
+</svg>
