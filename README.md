@@ -13,4 +13,6 @@ Most of what I write stays local, so it's quiet around here.
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
 
-<img src="https://raw.githubusercontent.com/d4v1dexe/d4v1dexe/card/trending-python.svg" alt="A trending Python repository, refreshed hourly" width="520">
+<a href="https://d4v1dexe.github.io/d4v1dexe/">
+  <img src="https://raw.githubusercontent.com/d4v1dexe/d4v1dexe/card/trending-python.svg" alt="A trending Python repository, refreshed hourly - click to open it" width="520">
+</a>
